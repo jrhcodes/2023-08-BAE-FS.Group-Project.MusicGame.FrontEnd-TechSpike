@@ -1,0 +1,85 @@
+<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/1479458365?tracklist=false"
+    width="210" height="150" frameborder="0" allowtransparency="true" play="play"
+    allow="encrypted-media; clipboard-write"></iframe>
+
+<!-- <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/7x9aauaA9cu6tyfpHnqDLo?utm_source=generator" width="100%" height="352"
+    frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<!DOCTYPE html> -->
+<html>
+
+<head>
+    <title>Spotify Web Playback</title>
+</head>
+
+<body>
+    <button id="play-button">Play Spotify Track</button>
+
+    <script>
+        // Your Spotify Web Playback SDK code goes here
+
+        window.onSpotifyWebPlaybackSDKReady = () => {
+            const player = new Spotify.Player({
+                name: 'Your Web Player',
+                getOAuthToken: callback => {
+                    // Retrieve an access token for the user and call the callback
+                    // You need to implement a method to get the user's access token.
+                }
+            });
+
+            // Connect to the player
+            player.connect().then(success => {
+                if (success) {
+                    console.log('Connected to Spotify Web Playback SDK');
+                }
+            });
+
+            // Handle play button click
+            document.getElementById('play-button').addEventListener('click', () => {
+                player.togglePlay().then(() => {
+                    console.log('Playback toggled');
+                });
+            });
+        };
+    </script>
+
+    <script>
+        // Initialize the Spotify Web Playback SDK with your client ID
+        window.onSpotifyWebPlaybackSDKReady = () => {
+            const player = new Spotify.Player({
+                name: 'Your Web Player',
+                getOAuthToken: callback => {
+                    // Your code to get the user's access token here
+                }
+            });
+
+            // Connect to the player
+            player.connect().then(success => {
+                if (success) {
+                    console.log('Connected to Spotify Web Playback SDK');
+                }
+            });
+
+            // Handle play button click
+            document.getElementById('play-button').addEventListener('click', () => {
+                player.togglePlay().then(() => {
+                    console.log('Playback toggled');
+                });
+            });
+        };
+
+        // Load the Spotify Web Playback SDK script
+        const script = document.createElement('script');
+        script.src = 'https://sdk.scdn.co/spotify-player.js';
+        script.async = true;
+        script.onload = () => {
+            // Initialize the SDK
+            window.onSpotifyWebPlaybackSDKReady();
+        };
+        document.body.appendChild(script);
+    </script>
+</body>
+
+</html>
