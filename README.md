@@ -1,8 +1,10 @@
 # installation
 You will need to run the following commands to install this project after cloning the repository:
+```
 npm install 
 npm install react-player
 npm install animations.css --save
+```
 
 # Getting Started with Create React App
 
