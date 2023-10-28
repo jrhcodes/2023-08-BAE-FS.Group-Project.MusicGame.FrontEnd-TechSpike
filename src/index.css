@@ -90,8 +90,8 @@ h1 {
   background-image: radial-gradient(black, purple);;
 }
 
-.trackcontainer>legend {
-  margin-left:50px;
+fieldset>legend {
+  margin-left:30px;
   padding: 0px;
 }
 
