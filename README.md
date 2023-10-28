@@ -8,7 +8,8 @@ npm install
 ```
 npm install react-player
 ```
-## optional - install css animations library - possibly not currently in use
+## optional - install css animations library 
+- possibly not currently required
 ```
 npm install animations.css --save
 ```
