@@ -3,16 +3,7 @@ You will need to run the following commands to install this project after clonin
 ## install node:
 ```
 npm install 
-```
-## install react player
-```
-npm install react-player
-```
-## optional - install css animations library 
-- possibly not currently required
-```
-npm install animations.css --save
-```
+``
 
 # Getting Started with Create React App
 
